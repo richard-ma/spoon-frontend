@@ -1,4 +1,9 @@
+# mail
 MAIL_HOST = 'your-server-domain'
 MAIL_PORT = 465
 MAIL_USERNAME = 'your-username'
 MAIL_PASSWORD = 'your-password'
+
+# MongoDB settings
+MONGO_URI = "mongodb://localhost:27017/"
+MONGO_DATABASE = "your-database-name"
