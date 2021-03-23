@@ -1,4 +1,4 @@
-from lib.mail import Mail
+from helpers.mail import Mail
 from settings import *
 
 if __name__ == '__main__':
