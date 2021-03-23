@@ -1,0 +1,4 @@
+MAIL_HOST = 'your-server-domain'
+MAIL_PORT = 465
+MAIL_USERNAME = 'your-username'
+MAIL_PASSWORD = 'your-password'
