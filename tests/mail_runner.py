@@ -1,4 +1,4 @@
-from src.mail import Mail
+from spoonfrontend.mail import Mail
 from settings import *
 
 if __name__ == '__main__':
