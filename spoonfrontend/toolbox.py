@@ -1,5 +1,15 @@
 import jieba
 
+
+def count_item(s):
+    ret = dict()
+    for item in s:
+        if item in ret.keys():
+            ret[item] += 1
+        else:
+            ret[item] = 1
+    return ret
+
 def count_words(s):
     ret = dict()
     for item in s:
@@ -13,7 +23,7 @@ def count_words(s):
     return ret
 
 
-def sorted_words(d):
+def sorted_dict(d):
     return dict(sorted(
         d.items(),
         key=lambda item: item[1],
@@ -33,5 +43,7 @@ if __name__ == "__main__":
 
     column = 'last_update'
     items = get_one_column('summary', client.get_date(column, date(2021, 3, 23)))
-    ret = sorted_words(count_words(items))
+    ret = sorted_dict(count_item(items))
+    print(ret)
+    ret = sorted_dict(count_words(items))
     print(ret)
