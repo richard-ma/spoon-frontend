@@ -1,6 +1,7 @@
 def get_one_column(column, s):
     return [item[column] for item in s]
 
+
 if __name__ == "__main__":
     from datetime import date
     from settings import *
